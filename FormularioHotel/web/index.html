@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>REGISTRO DE HOTEL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HOTEL BUENA VISTA.</h1>
+        <div>REGISTRO.</div>
+        <p>
+        <form action="ServletPrincipal" method="post">
+           Nombres: <input type="text" name="nombres" size=30 placeholder="Nombres"><br>
+           Apellidos: <input type="text" name="apellidos" size=30 placeholder="Apellidos"><br>
+           Numero de Telefono: <input type="text" name="num" size="10" placeholder="0000-0000"><br>
+           Correo: <input type="email" name="correo" size="30" placeholder="ejemplo@gmail.com">
+           <p>
+               Tipo de habitacion:<br>
+               <input type="radio" checked name="opinion" value="familiar">Habitacion Familiar <br>
+               <input type="radio" checked name="opinion" value="matrimonial">Habitacion Matrimonial<br>
+               <input type="radio" checked name="opinion" value="roja">Habitacion Roja<br>
+               <input type="radio" checked name="opinion" value="suite">Suite<br>
+           <p>
+               Fecha y hora de reservacion: <br>
+               <input type="date" checked name="fecha" min="2020-01-01" max="2025-012-31" step="1">
+               <input type="time" checked name="hora">
+           <p>
+               <input type="submit" name="botonenviar" value="ENVIAR">
+               <input type="reset" name="botonlimpiar" value="LIMPIAR">
+    </body>
+</html>
